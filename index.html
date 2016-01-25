@@ -407,5 +407,31 @@ Reveal.addEventListener( 'customevent', function() {
 
 		</script>
 
+		<style>
+			.reveal .slides > section.present, .reveal .slides > section > section.present {
+			  min-height: 100% !important;
+			  display: flex !important;
+			  flex-direction: column !important;
+			  justify-content: center !important;
+			  position: absolute !important;
+			  top: 0 !important;
+			  align-items: center !important;
+			}
+			section > h1, section > h2 {
+			  position: absolute !important;
+			  top: 0 !important;
+			  margin-left: auto !important;
+			  margin-right: auto !important;
+			  left: 0 !important;
+			  right: 0 !important;
+			  text-align: center !important;
+			}
+
+			.print-pdf .reveal .slides > section.present, .print-pdf .reveal .slides > section > section.present {
+			  min-height: 770px !important;
+			  position: relative !important;
+			}
+		</style>
+
 	</body>
 </html>
