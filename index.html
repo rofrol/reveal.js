@@ -408,7 +408,7 @@ Reveal.addEventListener( 'customevent', function() {
 		</script>
 
 		<style>
-			.reveal .slides > section.present, .reveal .slides > section > section.present {
+			.reveal.slide .slides > section, .reveal.slide .slides > section > section {
 			  min-height: 100% !important;
 			  display: flex !important;
 			  flex-direction: column !important;
@@ -427,7 +427,7 @@ Reveal.addEventListener( 'customevent', function() {
 			  text-align: center !important;
 			}
 
-			.print-pdf .reveal .slides > section.present, .print-pdf .reveal .slides > section > section.present {
+			.print-pdf .reveal.slide .slides > section, .print-pdf .reveal.slide .slides > section > section {
 			  min-height: 770px !important;
 			  position: relative !important;
 			}
